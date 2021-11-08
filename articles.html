@@ -26,7 +26,7 @@
         var x = xmldoc.getElementsByTagName("ArticleName");
         var y = xmldoc.getElementsByTagName("url");
         for (var i = 0; i < x.length; i++) {
-            txt += `<a href="${x[i].childNodes[0].nodeValue}">${y[i].chileNodes[0].nodeValue}</a><br>`;
+            txt += `<a href="${x[i].childNodes[0].nodeValue}">${y[i].childNodes[0].nodeValue}</a><br>`;
         }
         document.getElementById('posts-showcase').innerHTML = txt;
         document.getElementById('how-many-posts').innerHTML = x.length;
