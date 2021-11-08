@@ -15,7 +15,7 @@ function mouseOverInstall() {
     ins.addEventListener('mouseover', function() {
         ins.innerHTML = "Install は大成功でした！";
         setTimeout(function() {
-            ins.innerHTML = "[you@yourpc]$ pacman -Sy NetworkManager";
+            ins.innerHTML = "[you@your-pc]$ pacman -Sy NetworkManager";
         }, 500);
     });
 }

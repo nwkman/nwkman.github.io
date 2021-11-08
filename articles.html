@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | NetworkManager's Blog</title>
+</head>
+<body>
+    <div class="container">
+        You are currently at: <a href="https://nwkman.github.io/">Home</a> / 'Articles'. 
+        <hr>
+        <div class="content-container">
+            Found <span id="how-many-posts"></span>! <br>
+            <hr>
+            <div id="posts-showcase">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function show(xml) {
+        var xmldoc = xml.responseXML;
+        var txt = "";
+        var x = xmldoc.getElementsByTagName("ArticleName");
+        var y = xmldoc.getElementsByTagName("url");
+        for (var i = 0; i < x.length; i++) {
+            txt += `<a href="${x[i].childNodes[0].nodeValue}">${y[i].chileNodes[0].nodeValue}</a><br>`;
+        }
+        document.getElementById('posts-showcase').innerHTML = txt;
+        document.getElementById('how-many-posts').innerHTML = x.length;
+    }
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            show(this);
+        }
+    };
+    xmlhttp.open("GET", "article.xml", true);
+    xmlhttp.send();
+
+</script>
+</html>
