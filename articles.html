@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles | NetworkManager's Blog</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Noto+Sans+SC|Merriweather);
+        body {
+            font-family: 'Merriweather', 'Noto Sans SC';
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -17,6 +23,12 @@
 
             </div>
         </div>
+        <hr>
+        <footer>
+            &copy; 2021 NetworkManager. All rights reserved. <br>
+            Ugly right? Cause I'm too lazy to write a stylesheet for it. It is for this reason that my articles page
+            would also have no stylesheet.
+        </footer>
     </div>
 </body>
 <script>
@@ -29,7 +41,10 @@
             txt += `<a href="${y[i].childNodes[0].nodeValue}">${x[i].childNodes[0].nodeValue}</a><br>`;
         }
         document.getElementById('posts-showcase').innerHTML = txt;
-        document.getElementById('how-many-posts').innerHTML = x.length;
+        var qwq = String(x.length);
+        if (x.length == 1) qwq += ' post';
+        else qwq += ' posts';
+        document.getElementById('how-many-posts').innerHTML = qwq;
     }
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
