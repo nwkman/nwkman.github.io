@@ -1,81 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-cn">
-    <head>
-        <meta charset="utf-8">
-        <title> NetworkManager's Blog </title>
-        <meta name="keywords" content="nwkman, blog">
-        <style>
-            @import url(https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Merriweather&family=Fira+Code&family=Oxygen+Mono&display=swap);
-            body {
-                font-family: 'Merriweather', 'Noto Sans SC';
-            }
-            .pacman-install-text {
-                background: #dfe6e9;
-                font-family: 'Fira Code';
-                color: black;
-                border: 1px solid #dfe6e9;
-                border-radius: 5px;
-                margin: .5rem;
-                padding: .25rem;
-            }
-            .right-float {
-                float: right;
-                font-family: 'Fira Code';
-            }
-            a {
-                text-decoration: none;
-                font-family: 'Fira Code';
-            }
-            .emph {
-                font-family: 'Fira Code';
-            }
-            .content-container {
-                margin: 10% auto;
-                width: 50%;
-            }
-            .lang-indicator {
-                font-family: 'Oxygen Mono';
-                background: #dfe6e9;
-                border: 1px #dfe6e9;
-                border-radius: 5px;
-                display: block;
-                width: 2.5rem;
-                font-size: 10pt;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <span class="pacman-install-text">
-            [nwkman@her-arch-pc]$ pacman -Sy NetworkManager
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="nwkman, blog">
+    <link rel="stylesheet" href="style.css">
+    <title> NetworkManager's Blog </title>
+</head>
+<body>
+    <div class="container">
+        <span class="install console-text" id="hover-to-change">
+            [you@your-pc]$ pacman -Sy NetworkManager
+        </span>
+        <span class="right-float">
+            nav_bar = [<a href="articles.html"> 'Articles' </a>, <a href="links.html"> 'Links' </a>]
+        </span>
+        <hr>
+        <div class="content-container">
+            <span class="lang-indicator">
+                en-US
             </span>
-            <span class="right-float">
-            nav_bar = 
-            [<a href="/about.html">'About me'</a>, <a href="/solutions-all.html">'Solutions to X'</a>, <a href="links.html">'Links'</a>]
+            <h3 class="fixed-width console-text">
+                NetworkManager
+            </h3>
+            Hi, I'm <a href="https://github.com/nwkman">NetworkManager</a>, yes, the same as the famous package <a href="https://wiki.archlinux.jp/index.php/NetworkManager">NetworkManager</a><sup id="fn1"><a href="#sup1">[1]</a></sup>. <br>
+            I'm a <span id="how-old-am-i"></span>-days-old senior high student who is interested in coding. <br>
+            I'm currently using <a href="https://archlinux.org">Arch Linux</a>. <br>
+            I'm currently studying <a href="https://google.com/search?q=C%2B%2B">C++</a> and <a href="https://google.com/search?q=Python">Python</a>. <br>
+            <code>
+                pronouns = ['she', 'her', 'they', 'their']
+            </code>
+            <br> <br>
+            <span class="lang-indicator">
+                zh-CN
             </span>
-            <hr />
-            <div class="content-container">
-                <span class="lang-indicator"> en-US </span>
-                <h3>
-                    Under maintenance...
-                </h3>
-                This site has just been created by <a href="https://github.com/nwkman">nwkman</a> trivially. Just, look at her profile - she's only
-                a few days old!
-                <br>
-                Maybe you can wait for her for a few days so that she could update her first post and update this page.
-                <br> <br>
-                <span class="lang-indicator"> zh-CN </span> 
-                <h3>
-                    正在维护...
-                </h3>
-                显然地，这个网站才刚刚被 <a href="https://github.com/nwkman">nwkman</a> 建立。人家才几天大，体谅一下啦（
-                <br>
-                你可以再等个几天，万一她就更了呢？
-            </div>
-            <hr />
-            <footer class="emph">
-                &copy; 2021 NetworkManager. All rights reserved.
-            </footer>
+            <h3>
+                <span class="fixed-width console-text">
+                    NetworkManager
+                </span><sup id="fn2"><a href="#sup2">[2]</a></sup> 
+            </h3><br>
+            氦。我是 <a href="https://github.com/nwkman">NetworkManager</a>。一个平平无奇的 <span id="how-old-am-i-zh"></span> 天大的女子高中生。 <br>
+            能用 <a href="https://archlinux.org">Arch Linux</a>。在学 <a href="https://google.com/search?q=C%2B%2B">C艹</a> 和 <a href="https://google.com/search?q=Python">Python</a>。 <br>
+            因为是女孩子所以要叫「她」。你也可以用「祂」来指代我（
         </div>
-    </body>
+        <hr>
+        <footer class="footnotes">
+            <div id="sup1">
+                <a href="#fn1">[1]</a>: I don't speak Japanese. But mysteriously Google pushed that website to me. I thought that
+                it must be the Japanese website of Arch Wiki that is about the package <code >NetworkManager</code>, so I put it here.
+            </div>
+            <div id="sup2">
+                <a href="#fn2">[2]</a>: 其实就是「网管」。我逐字翻译的（
+            </div>
+            <br>
+            &copy; 2021 NetworkManager. All rights reserved.
+        </footer>
+    </div>
+    <!-- Custom scripts goes down here ... -->
+    <script src="main.js"></script>
+    <script>
+        // Of course I would not put my real birthday here. So let's assume that I'm a genius.
+        var myBirthday = new Date("November 5, 2021");
+        var today = new Date();
+        var diffInDays = Math.floor((today - myBirthday) / 1000 / 60 / 60 / 24);
+        document.getElementById('how-old-am-i').innerHTML = diffInDays;
+        document.getElementById('how-old-am-i-zh').innerHTML = diffInDays;
+
+        // hover effects ...
+        mouseOverInstall();
+    </script>
+</body>
 </html>

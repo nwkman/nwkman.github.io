@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Merriweather&family=Fira+Code&family=Oxygen+Mono&display=swap);
+
+body {
+    font-family: 'Merriweather', 'Noto Sans SC';
+}
+
+.install {
+    margin: .5rem;
+    padding: .25rem;
+}
+
+.console-text {
+    background: #dfe6e9;
+    font-family: 'Fira Code';
+    color: black;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+}
+
+.right-float {
+    float: right;
+    font-family: 'Fira Code';
+}
+
+.fixed-width {
+    width: 10rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Fira Code';
+}
+
+.footnotes {
+    font-size: 9pt;
+    font-family: 'Oxygen Mono', 'Noto Sans SC';
+}
+
+.content-container {
+    margin: 7.5% auto;
+    width: 50%;
+}
+
+.lang-indicator {
+    font-family: 'Oxygen Mono';
+    border-bottom: 1px solid black;
+    display: block;
+    width: 2.5rem;
+    font-size: 10pt;
+}
+
+.hidden {
+    display: none;
+}
