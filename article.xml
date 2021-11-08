@@ -4,5 +4,9 @@
             <ArticleName> This article leads to nothing. stop clicking it. </ArticleName>
             <url>#</url>
         </singlearticle>
+        <singlearticle>
+            <ArticleName> 随便倒腾了一下 Blog </ArticleName>
+            <url>https://nwkman.github.io/articles/wrote-a-blog.html</url>
+        </singlearticle>
     </articles>
 </bunchofdata>

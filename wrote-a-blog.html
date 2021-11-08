@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>随便倒腾了一下 Blog | NetworkManager's Blog</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Noto+Sans+SC|Merriweather|Fira+Code);
+        code {
+            font-family: 'Fira Code', 'Noto Sans SC';
+        }
+        body {
+            font-family: 'Merriweather', 'Noto Sans SC';
+        }
+        a {
+            text-decoration: none;
+        }
+        .content-container {
+            margin: 7.5% auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://nwkmgr.github.io/articles.html"> &lt Back to find other articles... </a> | <a href="https://nwkmgr.github.io"> Back to homepage... </a>
+    <hr>
+    <h2>
+        随便倒腾了一下 Blog
+    </h2>
+    <hr>
+    <code>
+        Published on November 8, 2021, which is a Monday. | author: NetworkManager
+    </code>
+    <div class="content-container">
+        因为懒得用 <code>Hexo</code>, <code>Jekyll</code> 或是 <code>Hugo</code> 来搞 Blog 了，于是就直接手写了（
+        <br>
+        <del>真的重拾了我好多年前的 <code>JS + CSS + HTML</code> 记忆呢</del>
+        <br>
+        总之，这条 Article 是我的 Blog 里头最早的一篇 Article 了，希望我不会断更 <del>这样就可以让这条 Article 快点沉下去了</del>。 <br>
+        Single-line code test: <br>
+        <code>
+            Hello, World!
+        </code><br>
+        C++ code test: <br>
+        <pre>
+            <code class="language-cpp">
+#include &lt;iostream&gt;
+using namespace std;
+void other_function() {
+    // ++ -- ** *** /* */ == === += -= *= / //
+    return;
+}
+int main() {
+    other_function();
+    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+    return 0;
+}
+            </code>
+        </pre>
+    </div>
+</body>
+<!-- highlight.js goes here! -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((el) => {
+            hljs.highlightElement(el);
+        })
+    })
+</script>
+</html>
